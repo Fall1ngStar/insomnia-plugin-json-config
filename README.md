@@ -1,23 +1,23 @@
-# Insomnia Plugin - dotenv
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bongosway/insomnia-plugin-dotenv/Publish?label=Publish%20to%20NPM&logo=github) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/bongosway/insomnia-plugin-dotenv?logo=npm)
-![npm](https://img.shields.io/npm/dt/insomnia-plugin-dotenv?logo=npm)
+# Insomnia Plugin - json-config
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Fall1ngStar/insomnia-plugin-json-config/Publish?label=Publish%20to%20NPM&logo=github) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Fall1ngStar/insomnia-plugin-json-config?logo=npm)
+![npm](https://img.shields.io/npm/dt/insomnia-plugin-json-config?logo=npm)
 
 Fetch data from a .env file.
 
 ### Installation:
 
 - Open Insomnia options (Ctrl + , | Cmd + ,)
-- Type `insomnia-plugin-dotenv` on the **Plugins** tab
+- Type `insomnia-plugin-json-config` on the **Plugins** tab
 
 ![](pix/install.gif)
 
 ### Usage:
-- To load `.env` file via system dialog
+- To load JSON file via system dialog
 
 ![](pix/single.gif)
 
 
-- To add `.env` via environment variable
+- To add JSON via environment variable
 
 ![](pix/env.gif)
 
@@ -28,6 +28,6 @@ Fetch data from a .env file.
 
 ![](pix/expandEnv.gif)
 
-- Add Environment variables inside your .env file, it will be expanded automatically
+- Add Environment variables inside your JSON file, it will be expanded automatically
 
 ![](pix/expandInsideEnv.gif)

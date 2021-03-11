@@ -1,16 +1,16 @@
 {
-  "name": "insomnia-plugin-dotenv",
-  "version": "1.1.1",
-  "description": "Insomnia template tag to pull data from .env file",
-  "author": "Edirin Atumah <dumbdev@gmail.com>",
+  "name": "insomnia-plugin-json-config",
+  "version": "1.0.0",
+  "description": "Insomnia template tag to pull data from json file",
+  "author": "Fall1ngStar <12586447+Fall1ngStar@users.noreply.github.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bongosway/insomnia-plugin-dotenv"
+    "url": "https://github.com/Fall1ngStar/insomnia-plugin-json-config"
   },
   "bugs": {
-    "url": "https://github.com/bongosway/insomnia-plugin-dotenv/issues"
+    "url": "https://github.com/Fall1ngStar/insomnia-plugin-json-config/issues"
   },
-  "homepage": "https://github.com/bongosway/insomnia-plugin-dotenv",
+  "homepage": "https://github.com/Fall1ngStar/insomnia-plugin-json-config",
   "keywords": [
     "insomnia",
     "api",
@@ -23,8 +23,6 @@
     "description": "Template tag to pull data from from .env file"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "dotenv-expand": "^5.1.0",
     "fs": "^0.0.1-security",
     "untildify": "^4.0.0"
   }

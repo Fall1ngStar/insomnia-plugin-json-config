@@ -1,18 +1,17 @@
-const dotenv = require('dotenv');
 const untildify = require('untildify');
-const dotenvExpand = require('dotenv-expand');
 
 const fs = require('fs');
+const { cpuUsage } = require('process');
 
 module.exports.templateTags = [
   {
-    displayName: 'dotenv',
-    name: 'dotenv',
-    description: 'Pull data from .env',
+    displayName: 'json-config',
+    name: 'json-config',
+    description: 'Pull data from JSON file',
     args: [
       {
-        displayName: 'Choose .Env File',
-        help: 'Path to .env file',
+        displayName: 'Choose JSON File',
+        help: 'Path to JSON file',
         type: 'file'
       },
       {
@@ -29,13 +28,8 @@ module.exports.templateTags = [
           console.log('File or directory not found');
       });
 
-      const config = dotenv.config({ path: expandedPath });
-      dotenvExpand(config);
-
-
-      if (!config || config.error) {
-        throw new Error('We could not parse the config..what have you done 😃', config.error);
-      }
+      const rawData = fs.readFileSync(expandedPath);
+      const config = JSON.parse(rawData);
       
       if (config.parsed[varName] === undefined) {
         throw new Error('Variable not found!');
