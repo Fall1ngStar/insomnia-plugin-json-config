@@ -1,12 +1,11 @@
 const untildify = require('untildify');
 
 const fs = require('fs');
-const { cpuUsage } = require('process');
 
 module.exports.templateTags = [
   {
-    displayName: 'json-config',
-    name: 'json-config',
+    displayName: 'JSON config',
+    name: 'jsonconfig',
     description: 'Pull data from JSON file',
     args: [
       {
@@ -27,15 +26,15 @@ module.exports.templateTags = [
         if (err && err.code === 'ENOENT')
           console.log('File or directory not found');
       });
-
+      
       const rawData = fs.readFileSync(expandedPath);
       const config = JSON.parse(rawData);
-      
-      if (config.parsed[varName] === undefined) {
+
+      if (config[varName] === undefined) {
         throw new Error('Variable not found!');
       }
 
-      return config.parsed[varName];
+      return config[varName];
     }
   }
 ];
