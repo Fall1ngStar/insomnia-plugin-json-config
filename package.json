@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-json-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Insomnia template tag to pull data from json file",
   "author": "Fall1ngStar <12586447+Fall1ngStar@users.noreply.github.com>",
   "repository": {
