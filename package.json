@@ -1,8 +1,8 @@
 {
   "name": "insomnia-plugin-json-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Insomnia template tag to pull data from json file",
-  "author": "Fall1ngStar <12586447+Fall1ngStar@users.noreply.github.com>",
+  "author": "Fall1ngStar <fall1ngstar.public@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/Fall1ngStar/insomnia-plugin-json-config"
@@ -19,8 +19,8 @@
   "license": "MIT",
   "main": "index.js",
   "insomnia": {
-    "name": "dotenv",
-    "description": "Template tag to pull data from from .env file"
+    "name": "jsonconfig",
+    "description": "Template tag to pull data from from JSON file"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
